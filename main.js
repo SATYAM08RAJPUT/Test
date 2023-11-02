@@ -1,3 +1,6 @@
+import Header from './header';
+import ListingView from './listingView';
+
 class main {
   constructor(data){
       this.data = data;
@@ -27,6 +30,9 @@ const dataer = [
 ]
 const workseracher = new Header(dataer);
 workseracher.randerList()
+const listingView = new ListingView();
+listingView.init();
+
 
 
 // randerList(joblistingData);

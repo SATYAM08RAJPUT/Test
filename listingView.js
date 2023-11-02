@@ -1,4 +1,6 @@
-class ListingView {
+import dataService from "./dataservice";
+
+export default class ListingView {
   constructor(jobListingData) {
     this.jobListingData = jobListingData
       this.jobListingData = [];
@@ -53,8 +55,6 @@ class ListingView {
   }
   
 }
-const listingView = new ListingView();
-listingView.init();
 
 
 

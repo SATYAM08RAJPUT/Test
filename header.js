@@ -1,4 +1,4 @@
-class Header {
+export default class Header {
     constructor(data){
         this.data = data;
     }
@@ -30,6 +30,6 @@ class Header {
       applications: "Applications",
     }
   ]
-  const workserach = new Header(data);
-  workserach.randerList()
+  // const workserach = new Header(data);
+  // workserach.randerList()
   

@@ -26,3 +26,5 @@ const dataService = (function() {
         postData
     }
 })();
+
+export default dataService;
