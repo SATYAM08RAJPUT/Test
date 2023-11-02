@@ -46,7 +46,7 @@ export default class ListingView {
 }
   
   async init() {
-    const data = await dataService.getData("dummy.json");
+    const data = await dataService.getData("/data/dummy.json");
     console.log(data);
     this.jobListingData = data;
     this.renderSearchBar();
