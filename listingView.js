@@ -16,7 +16,6 @@ export default class ListingView {
       </div> `
       document.getElementById("renderserchdata").innerHTML = html 
   }
-
   renderJobList(jobListingData) {
       const tpl = jobListingData.map((itm) => {
           return `<div class = "set">
@@ -43,7 +42,7 @@ export default class ListingView {
       console.log(filterjob)
       this.renderJobList(filterjob)
     })
-}
+  }
   
   async init() {
     const data = await dataService.getData("/data/dummy.json");
@@ -56,43 +55,3 @@ export default class ListingView {
   
 }
 
-
-
-
-
-
-
-
-
-// function requestfun(event){
-//   console.log(event)
-//   var serchdata = event.target.value;
-//   console.log(serchdata)
-//   const filterdata = collectData.jobs.filter((item) => {
-//     console.log(item)
-//     return item.title.includes(serchdata);
-//   })
-//   console.log(filterdata);
-//   reanderdata(filterdata);
-// }
-
-// function searchlocation(event){
-//   console.log(event)
-//   const serchlocation = event.target.value;
-//   console.log(serchlocation)
-//   const filterlocation = collectData.jobs.filter((itm) => {
-//     console.log(itm)
-//     return itm.location.includes(serchlocation)
-//   })
-//   console.log(filterlocation);
-// }
-
-// function searchsalary(event){
-//   console.log(event)
-//   const serchsaly = event.target.value;
-//   console.log(serchsaly)
-//   const filtersalary = collectData.jobs.filter((item) => {
-//     return item.salary.includes(serchsaly)
-//   })
-//   console.log(filtersalary);
-// }
