@@ -7,6 +7,7 @@ export default class Header {
       return `
       <div class ="head">
       <h2>${item.logo}</h2>
+      <a href="#" id="menu-icon"><i style="font-size:30px" class="fa">&#xf0c9;</i></a>
       <span>${item.find}</span>
       <span>${item.compaines}</span>
       <span>${item.history}</span>

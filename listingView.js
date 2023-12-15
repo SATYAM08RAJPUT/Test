@@ -37,10 +37,9 @@ export default class ListingView {
       console.log(jobSalry,jobtitleserch,joblocationid)
       const filterjob =  this.jobListingData.jobs.filter((item) => {
         return item.title.includes(jobtitleserch) || item.location.includes(joblocationid) || item.salary.includes(jobSalry);
-        // return item.salary.includes(jobSalry);
       })
-      console.log(filterjob)
-      this.renderJobList(filterjob)
+      console.log(filterjob);
+      this.renderJobList(filterjob);
     })
   }
   
@@ -52,6 +51,5 @@ export default class ListingView {
     this.renderJobList(this.jobListingData.jobs);
     this.eventbind();
   }
-  
 }
 
