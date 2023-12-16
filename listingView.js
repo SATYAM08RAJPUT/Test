@@ -19,8 +19,8 @@ export default class ListingView {
   renderJobList(jobListingData) {
       const tpl = jobListingData.map((itm) => {
           return `<div class = "set">
-        <img src ="https://i.pinimg.com/736x/76/24/fb/7624fbde994774c646fb6f586c04d875--ios-app-icon-logo-desing.jpg" class ="smallogo">
-        <span>${itm.title}</span>
+        <img src ="https://ugc.futurelearn.com/uploads/images/d5/6d/d56d20b4-1072-48c0-b832-deecf6641d49.jpg" class ="smallogo">
+        <h1>${itm.title}</h1>
         <div>Company: ${itm.company}</div>
         <div>Location:-${itm.location}</div>
         <div>Salary Range:-${itm.salary}</div>
