@@ -54,9 +54,12 @@ input{
 }
 #search{
   padding: 0.8%;
-  width: 10%;
+  width: 12%;
   cursor: pointer;
   border-radius: 50px;
+  background-color: #34a853;
+  color: white;
+  font-size: 18px;
 }
 .sidebar{
   display: flex;
@@ -208,15 +211,14 @@ body{
 #search{
   padding: 2%;
   width:90%;
-  border: solid 1px;
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Poppins', sans-serif;
-  color: white;
   cursor: pointer;
-  color: black;
+  background-color: #34a853;
   margin-bottom: 20px;
   border-radius: 50px;
 }
+
 .head h2{
   font-size: 30px;
 }
